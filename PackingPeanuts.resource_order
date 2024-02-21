@@ -113,6 +113,7 @@
     {"name":"__input_gamepad_tester_init","order":2,"path":"scripts/__input_gamepad_tester_init/__input_gamepad_tester_init.yy",},
     {"name":"input_debug_player_input","order":2,"path":"scripts/input_debug_player_input/input_debug_player_input.yy",},
     {"name":"input_gamepad_is_connected","order":10,"path":"scripts/input_gamepad_is_connected/input_gamepad_is_connected.yy",},
+    {"name":"spr_ts_tiny_dungeon","order":3,"path":"sprites/spr_ts_tiny_dungeon/spr_ts_tiny_dungeon.yy",},
     {"name":"__input_config_gamepads","order":3,"path":"scripts/__input_config_gamepads/__input_config_gamepads.yy",},
     {"name":"input_combo_get_phase","order":4,"path":"scripts/input_combo_get_phase/input_combo_get_phase.yy",},
     {"name":"input_cursor_gyro_params_get","order":2,"path":"scripts/input_cursor_gyro_params_get/input_cursor_gyro_params_get.yy",},

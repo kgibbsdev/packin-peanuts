@@ -11,13 +11,13 @@ for(var weaponIndex=0; weaponIndex<=array_length(weaponSlots)-1; weaponIndex++){
 	
 	if(!is_even(weaponIndex)){
 		//weapon is on the left
-		weaponSlot.x = x;
+		weaponSlot.x = x-sprite_width/2;
 		weaponSlot.y = y + (leftWeaponOffset*30);
 		leftWeaponOffset += 1;
 	}
 	else{
 		//weapon is on the right
-		weaponSlot.x = x + sprite_width;
+		weaponSlot.x = x + sprite_width/2;
 		weaponSlot.y = y + (rightWeaponOffset*30);
 		rightWeaponOffset += 1;
 	}

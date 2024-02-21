@@ -11,7 +11,7 @@ function WeaponSlot() constructor {
 }
 
 moveSpeed = 4;
-weaponSlotMax = 80;
+weaponSlotMax = 2;
 weaponSlots = [];
 weaponSlotSpacing = 5;
 

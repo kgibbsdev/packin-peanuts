@@ -1,5 +1,5 @@
 function instance_create(_x, _y, _object){
-	instance_create_depth(_x, _y, DEFAULT_LAYER, _object
+	instance_create_depth(_x, _y, DEFAULT_LAYER, _object);
 }
 
 function start_game() {
