@@ -24,3 +24,8 @@ for(var weaponIndex=0; weaponIndex<=array_length(weaponSlots)-1; weaponIndex++){
 		rightWeaponOffset += 1;
 	}
 }
+
+var drop_gotten = instance_place(x, y, obj_drop);
+if(drop_gotten != noone){
+	drop_gotten.pick_up();	
+}
