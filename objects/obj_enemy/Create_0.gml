@@ -1,8 +1,12 @@
 playerReference = instance_nearest(x, y, obj_player);
 moveSpeed = 2;
 gettingShot = false;
+is_dying = false;
 health_points_base = irandom_range(1, 2);
 health_points = health_points_base;
+knockbackCooldownBase = 40;
+knockbackCooldown = knockbackCooldownBase;
+
 
 overlay_color = c_red; // You can change 'c_red' to any color you desire
 overlay_duration_base = 5;

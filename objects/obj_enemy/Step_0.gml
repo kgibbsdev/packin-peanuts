@@ -45,5 +45,5 @@ if (bulletInst != noone) {
 }
 
 if(health_points <= 0){
-	instance_destroy();	
+	is_dying = true;
 }
