@@ -3,14 +3,22 @@ enum DirectionFacing {
 	right = 1,
 }
 
-function WeaponSlot() constructor {
-	weapon = noone;
+function WeaponSlot(_weapon = noone) constructor {
+	weapon = _weapon;
 	x = 0;
 	y = 0;
-	DirectionFacing = undefined;
+	xScale = 1;
+	yScale = 1;
+	rotation = 0;
 }
 
-moveSpeed = 4;
+add_weapon = function(_weapon){
+	weaponSlotMax += 1;
+	var weaponSlot = new WeaponSlot(_weapon);
+	array_push(weaponSlots, weaponSlot);
+}
+
+moveSpeed = 6;
 weaponSlotMax = 2;
 weaponSlots = [];
 weaponSlotSpacing = 5;

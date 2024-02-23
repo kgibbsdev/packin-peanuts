@@ -1,3 +1,5 @@
+//Is passed "weaponSlot" struct from obj_player
+
 event_inherited();
 
 x = weaponSlot.x;

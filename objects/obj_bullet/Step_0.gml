@@ -1,1 +1,1 @@
-x += 5 * image_xscale;
+x += (bulletSpeed + obj_player.moveSpeed) * image_xscale;
