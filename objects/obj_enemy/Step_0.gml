@@ -16,8 +16,13 @@ var bulletInst = instance_place(x, y, obj_bullet);
 
 if (bulletInst != noone) {
 	//take damage
-	
+	overlay_alpha = 1;
 	if(knockbackCooldown <= 0){
+		gettingShot = true;
+		if(overlay_duration <= 0){
+			overlay_duration = overlay_duration_base;	
+		}
+		
 	    // Get the direction from the bullet to the enemy
 	    var direction_to_enemy = point_direction(bulletInst.x, bulletInst.y, x, y);
     
@@ -25,7 +30,7 @@ if (bulletInst != noone) {
 	    var knockback_direction = direction_to_enemy; // 180 degrees opposite
     
 	    // Calculate knockback magnitude (you may adjust the value)
-	    var knockback_magnitude = 50;
+	    var knockback_magnitude = 30
     
 	    // Apply knockback
 	    var knockback_x = lengthdir_x(knockback_magnitude, knockback_direction);
@@ -33,5 +38,12 @@ if (bulletInst != noone) {
 	    x += knockback_x;
 	    y += knockback_y;
 		knockbackCooldown = knockbackCooldownBase;
+		
+		health_points -= 1;
+		instance_destroy(bulletInst);
 	}
+}
+
+if(health_points <= 0){
+	instance_destroy();	
 }

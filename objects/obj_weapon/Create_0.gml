@@ -1,4 +1,4 @@
-fireRate = 5;
+fireRate = 45;
 
 alarm_set(0, fireRate);
 
