@@ -1,3 +1,9 @@
+if(experience >= next_level_experience){
+	level += 1;
+	experience = 0;
+	next_level_experience = global.exp_amounts[level];
+	
+}
 if(input_check("up")){ y -= moveSpeed }
 if(input_check("down")){ y += moveSpeed }
 if(input_check("left")){ x -= moveSpeed }
@@ -33,4 +39,3 @@ var drop_gotten = instance_place(x, y, obj_drop);
 if(drop_gotten != noone){
 	drop_gotten.pick_up();
 }
-
