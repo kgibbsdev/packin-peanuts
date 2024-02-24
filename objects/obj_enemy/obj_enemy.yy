@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/PackingPeanuts/Objects.yy",
+    "name": "Enemies",
+    "path": "folders/PackingPeanuts/Objects/Enemies.yy",
   },
   "parentObjectId": null,
   "persistent": false,

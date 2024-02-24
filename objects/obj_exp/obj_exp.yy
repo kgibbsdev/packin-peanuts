@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/PackingPeanuts/Objects.yy",
+    "name": "Drops",
+    "path": "folders/PackingPeanuts/Objects/Drops.yy",
   },
   "parentObjectId": {
     "name": "obj_drop",

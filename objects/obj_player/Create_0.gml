@@ -22,6 +22,18 @@ moveSpeed = 6;
 weaponSlotMax = 2;
 weaponSlots = [];
 weaponSlotSpacing = 5;
+hitpoints = 10;
+experience = 0;
+next_level_experience = 10;
+hit_cooldown = 10;
+hit_by_enemy = false;
+hit_cooldown_base = 40;
+hit_cooldown = hit_cooldown_base;
+
+overlay_color = c_red; // You can change 'c_red' to any color you desire
+overlay_duration_base = 5;
+overlay_duration = 5; // Number of frames you want the overlay to last
+overlay_alpha = 1.0; // Starting alpha value
 
 for(var i=0; i <= weaponSlotMax-1; i++){
 	var newWeaponSlot = new WeaponSlot();
