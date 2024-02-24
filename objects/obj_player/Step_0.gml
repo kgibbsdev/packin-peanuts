@@ -1,13 +1,17 @@
 if(experience >= next_level_experience){
+	pause_game();
 	level += 1;
 	experience = 0;
 	next_level_experience = global.exp_amounts[level];
 	
 }
-if(input_check("up")){ y -= moveSpeed }
-if(input_check("down")){ y += moveSpeed }
-if(input_check("left")){ x -= moveSpeed }
-if(input_check("right")){ x += moveSpeed }
+if(!global.game_paused)
+{
+	if(input_check("up")){ y -= moveSpeed }
+	if(input_check("down")){ y += moveSpeed }
+	if(input_check("left")){ x -= moveSpeed }
+	if(input_check("right")){ x += moveSpeed }
+}
 
 if(hit_cooldown > 0){
 	hit_cooldown -= 1;	
